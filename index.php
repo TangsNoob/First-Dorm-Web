@@ -29,7 +29,7 @@ require_once 'config/db.php';
             </a>
 
             <ul class="nav nav-pills">
-                <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Home</a></li>
+                <li class="nav-item"><a href="index.php" class="nav-link active" aria-current="page">Home</a></li>
                 <li class="nav-item"><a href="#" class="nav-link">Features</a></li>
                 <li class="nav-item"><a href="#" class="nav-link">Pricing</a></li>
                 <li class="nav-item"><a href="#" class="nav-link">FAQs</a></li>
@@ -119,10 +119,11 @@ require_once 'config/db.php';
                     <div class="card shadow-sm">
                         <img src="Nuankorn_dorm.jpeg" class="card-img-top"" alt=" Nuankorn Dormitory Picture">
                         <div class="card-body">
-                            <p class="card-text">หอพักต้นซอยไทธานี 10 (ในนวนคร) ค่าห้องเพียง 1,500 เข้าซอยไทธานี 10 แค่ 20 ม.</p>
+                            <p class="card-text">หอพักต้นซอยไทธานี 10 (ในนวนคร) เข้าซอยไทธานี 10 แค่ 20 ม.</p>
                             <div class="d-flex justify-content-between align-items-center">
                                 <div class="btn-group">
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                    <button type="button" name = "Nuankorn" class="btn btn-sm btn-outline-secondary"
+                                            onclick="window.location.href='Nuankorn.php'">View</button>
                                 </div>
                                 <small class="text-body-secondary">นวนคร</small>
                             </div>
@@ -136,9 +137,11 @@ require_once 'config/db.php';
                             <p class="card-text">หอพักรัตธนาวัน คลองหลวง 27/3 ใกล้ต้นซอย ทำเลดี ใกล้เซเว่น โลตัส ตลาด</p>
                             <div class="d-flex justify-content-between align-items-center">
                                 <div class="btn-group">
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                    <button type="button" name = "Khlong_loang" class="btn btn-sm btn-outline-secondary"
+                                            onclick="window.location.href='Khlong_loang.php'">View</button> 
+
                                 </div>
-                                <small class="text-body-secondary">นวนคร</small>
+                                <small class="text-body-secondary">คลองหลวง</small>
                             </div>
                         </div>
                     </div>
@@ -150,9 +153,9 @@ require_once 'config/db.php';
                             <p class="card-text">หอพักในหมู่บ้านวังทอง ดอนเมือง กรุงเทพมหานคร มีห้องน้ำในตัว</p>
                             <div class="d-flex justify-content-between align-items-center">
                                 <div class="btn-group">
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                    <button type="button" name = "Don_mueang" class="btn btn-sm btn-outline-secondary">View</button>
                                 </div>
-                                <small class="text-body-secondary">นวนคร</small>
+                                <small class="text-body-secondary">ดอนเมือง</small>
                             </div>
                         </div>
                     </div>
